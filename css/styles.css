@@ -1,0 +1,409 @@
+/*General*/
+
+/* main-color  #212121 */
+/* add-color #757575 */
+/* accent #2196F3 */
+/* background-color #E5E5E5 */
+/*secondary-bg-color #2F303A*/
+:root {
+--primary-text-color: #212121;
+--secondary-text-color: #757575;
+--accent-color: #2196F3;
+--background-color: #E5E5E5 ;
+--secondary-bg-color: #2F303A;
+--third-bg-color: #F5F4FA;
+--white-bg-color: #FFF;
+}
+
+body {
+    background: var(--white-bg-color);
+    color: var(--primary-text-color);
+    cursor:pointer;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,ul,p {
+    margin-top:0;
+    margin-bottom:0;
+}
+
+h2.section-title {
+    margin-bottom:50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+
+    color: #212121;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/*Header*/
+.page-header {
+    background-color: var(--white-bg-color);
+}
+
+.container {
+    display:flex;
+    padding-left:15px;
+    padding-right:15px;
+    width:1200px;
+    margin:0 auto;
+    /*outline:1px solid tomato;*/
+}
+
+.head-nav {
+    align-items:center;
+}
+
+.container.content{
+    flex-wrap:wrap;
+    justify-content: center;
+    /*margin-bottom: 94px;*/
+}
+
+.page-header > .container.no-mb {
+    margin-bottom: 0;
+}
+
+.page-header > .container {
+    justify-content: space-between;
+}
+
+.content.team-space {
+    margin-bottom: 0;
+    /*padding-bottom: 94px;*/
+}
+
+.container > nav {
+    display:flex;
+}
+
+.container > h1 {
+    display:none;
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    color: var(--primary-text-color);
+}
+
+span {
+    color: var(--accent-color);
+}
+
+.logo:hover,
+.logo:focus {
+    color:var(--accent-color);
+}
+
+.site-nav,
+.contact-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    list-style-type: none;
+}
+
+.site-nav,
+.contact-link {
+    display:flex;
+}
+
+.site-nav > li,
+.content > .contact-link > li {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left:50px;
+}
+
+.site-nav > li:first-child {
+    margin-left:94px;
+}
+
+.contact-link > li:first-child {
+    margin-left:0;
+}
+
+
+.contact {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+
+.link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+ 
+.link:hover,
+.link:focus,
+.contact:hover,
+.contact:focus {
+    color:var(--accent-color);
+}
+
+.current {
+    color: var(--accent-color);
+}
+
+
+/*Hero of Page*/
+.hero-list {
+    /*margin-bottom: 94px;*/
+
+    text-align: center;
+
+    background-color: var(--secondary-bg-color);
+    color: var(--white-bg-color);
+}
+.hero-title {
+    margin-top:0;
+    margin-bottom:30px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/*Advantages*/
+.section-title {
+    text-align: center;
+    margin-bottom:10px;
+}
+
+.section-title.team {
+    /*padding-top: 94px;*/
+}
+
+.feauter-list,
+.work-list,
+.content > ul {
+    list-style-type: none;
+}
+
+.feauter-list,
+.work-list,
+.team-list {
+    display:flex;
+}
+
+.work-list{
+    flex-wrap:wrap;
+}
+
+.feauter-list > .item,
+.work-list > .item,
+.team-list > .item {
+    justify-content: flex-start;
+    margin-right:30px;
+}
+
+
+.feauter-list > .item:last-child,
+.work-list > .item:nth-child(3n),
+.work-list > .item:last-child,
+.team-list > .item:last-child {
+    margin-right: 0;
+}
+
+.project > .item {
+    margin-bottom: 30px;
+}
+
+.team-list > .item {
+    text-align:center;
+    background: #FFFFFF;
+/* material shadow v1 */
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
+.feauter-title{
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    padding-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+/*Work-List*/
+
+/*Contact List*/
+.contact-list {
+    background-color:var(--background-color);
+}
+
+.team-member{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
+    /*text-align: center;*/
+    letter-spacing: 0.03em;
+}
+
+.team-photo {
+    margin-bottom: 30px;
+}
+/*Portfolio Works*/
+.title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    }
+    
+.group {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    
+    color: var(--secondary-text-color);
+    }    
+
+.work-list > li > .img {
+    margin-bottom: 20px;
+}
+
+.work-list > li > .title {
+    margin-bottom: 4px;
+}
+
+/*Button*/
+.button{
+    font-family:inherit;
+    border-radius: 4px;
+
+}
+
+.button-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom:50px;
+}
+
+.buttons {
+    display: flex;
+    list-style-type: none;
+}
+.buttons > li {
+    padding-left:8px;
+}
+
+.buttons>li:first-child {
+    padding-left:0;
+}
+
+.primary {
+    padding:10px 32px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    color:var(--white-bg-color);
+    background-color: var(--accent-color);
+}
+
+.secondary {
+    padding:6px 22px;
+    
+    font-weight: 500;
+    font-size: 16px;
+    text-align:center;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    }
+    
+.secondary:hover,
+.secondary:focus {
+    background-color: var(--accent-color);
+    color: var(--white-bg-color);
+    }
+
+/*Footer*/
+.contact-link {
+    font-family: 'Roboto';
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.footer {
+    background: var(--secondary-bg-color);
+}
+
+.no-flex {
+    display:block;
+}
+
+.footer >.container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.no-flex > h2 {
+    margin-bottom: 20px;
+}
+
+.foot, 
+.foot-link{
+    color: white;
+}
+
+.foot-link.contact {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.foot-link.street:hover,
+.foot-link.street:focus,
+.foot-link.contact:hover,
+.foot-link.contact:focus {
+    color:var(--accent-color);
+}
+
+address > .contact-link{
+    font-style:normal;
+}
+
+.contact-link > li {
+    margin-bottom: 9px;
+}
+
+.contact-link > li:last-child {
+    margin-bottom: 0;
+}
